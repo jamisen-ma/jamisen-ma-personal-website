@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamisen Ma - Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>JM</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Jamisen Ma</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I'm a <span id="typed-text"></span>
+                    </h2>
+                    <p class="hero-description">
+                        Software Engineer passionate about building scalable systems, 
+                        full-stack applications, and innovative solutions. Currently studying 
+                        Computer Science at UT Austin with experience at Confluent, Expedia, and Lockheed Martin.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div class="profile-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="profile-info">
+                            <h3>Jamisen Ma</h3>
+                            <p>Software Engineer</p>
+                            <div class="social-links">
+                                <a href="https://github.com/jamisen-ma" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://linkedin.com/in/jamisenma0215" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="mailto:mjamisen02@gmail.com"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a Computer Science student at the University of Texas at Austin with a passion for 
+                        building robust, scalable software systems. My experience spans across multiple domains 
+                        including distributed systems, cloud infrastructure, and full-stack development.
+                    </p>
+                    <p>
+                        I've had the privilege of working at industry-leading companies like Confluent, where I 
+                        designed and implemented a full-featured Lineage API Service, and Expedia Group, where I 
+                        modernized authentication systems. My technical expertise includes Java, Go, Python, 
+                        React, and cloud platforms like AWS and GCP.
+                    </p>
+                    <div class="education-card">
+                        <h3>Education</h3>
+                        <div class="education-item">
+                            <h4>University of Texas at Austin</h4>
+                            <p>Bachelor of Science in Computer Science</p>
+                            <p>GPA: 3.7 | Expected Graduation: May 2026</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Internships</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Technologies</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Software Engineering Intern</h3>
+                            <span class="company">Confluent</span>
+                            <span class="duration">May 2025 - August 2025</span>
+                        </div>
+                        <ul class="timeline-description">
+                            <li>Designed and implemented a full-featured Java and Go Lineage API Service serving 200+ weekly API calls</li>
+                            <li>Created gRPC and HTTP endpoints achieving 500ms median latency for up to 10,000 events</li>
+                            <li>Containerized API Service with Docker and deployed to AWS EKS and GCP GKE with Terraform and Helm</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Go</span>
+                            <span class="tech-tag">gRPC</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Terraform</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Software Development Intern</h3>
+                            <span class="company">Expedia Group</span>
+                            <span class="duration">May 2024 - July 2024</span>
+                        </div>
+                        <ul class="timeline-description">
+                            <li>Modernized authentication feature using Java with 5 REST API endpoints for OIDC flow</li>
+                            <li>Developed AWS SES system in Kotlin to handle 1200+ API client credentials</li>
+                            <li>Utilized AuroraDB, Redis, and Kafka improving credential operations by 8%</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Kotlin</span>
+                            <span class="tech-tag">AWS SES</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">Kafka</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Software Engineering Intern</h3>
+                            <span class="company">Lockheed Martin</span>
+                            <span class="duration">May 2023 - August 2023</span>
+                        </div>
+                        <ul class="timeline-description">
+                            <li>Improved Python and Flask desktop applications for data acquisition and analysis</li>
+                            <li>Integrated MySQL, MongoDB and NoSQL databases with solar research backend applications</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Platform for Live Sports Scores</h3>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <p>End-to-end event pipeline for live sports data with real-time metrics and React-based visualizations.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Kubernetes</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Agentic Claude AI Agent</h3>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <p>Autonomous agent using Claude API and LangChain to identify viral sports moments and create highlight reels.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Claude API</span>
+                        <span class="tech-tag">LangChain</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Task Management System</h3>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <p>Rust REST API with Redis caching and PHP Laravel application with JWT authentication.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Rust</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">Laravel</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Positive EV Arbitrage Bot</h3>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <p>Sports betting bot identifying positive EV and arbitrage opportunities from 20+ sportsbooks.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">Pandas</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>PintOS Operating System</h3>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <p>Educational operating system implementing multithreading, synchronization, and task scheduling.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">C/C++</span>
+                        <span class="tech-tag">Linux</span>
+                        <span class="tech-tag">Git</span>
+                        <span class="tech-tag">GDB</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>SunPy Open Source Contributor</h3>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <p>Identified and fixed over 20 bugs in the SunPy visualization package for solar physics research.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">SciPy</span>
+                        <span class="tech-tag">Matplotlib</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C/C++</span>
+                        <span class="skill-tag">Rust</span>
+                        <span class="skill-tag">Go</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">Kotlin</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">Redux</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">Angular</span>
+                        <span class="skill-tag">Bootstrap</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Databases & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Spark</span>
+                        <span class="skill-tag">Cassandra</span>
+                        <span class="skill-tag">Snowflake</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">Kafka</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in new opportunities and collaborations. Feel free to reach out!</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:mjamisen02@gmail.com">mjamisen02@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+18327811053">+1 (832) 781-1053</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://linkedin.com/in/jamisenma0215" target="_blank">linkedin.com/in/jamisenma0215</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/jamisen-ma" target="_blank">github.com/jamisen-ma</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Jamisen Ma. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
