@@ -3,435 +3,358 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jamisen Ma - Software Engineer</title>
+    <title>Jamisen Ma – Software Engineer</title>
+    <meta name="description" content="Jamisen Ma is a software engineer building AI agent systems and backend infrastructure. Currently at Airtable; previously Confluent, Expedia Group and Lockheed Martin.">
+    <meta name="author" content="Jamisen Ma">
+    <meta name="theme-color" content="#fafaf9">
+    <link rel="canonical" href="https://jamisen-ma.github.io/jamisen-ma-personal-website/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jamisen Ma – Software Engineer">
+    <meta property="og:description" content="Software engineer building AI agent systems and backend infrastructure. Currently at Airtable; previously Confluent, Expedia Group and Lockheed Martin.">
+    <meta property="og:url" content="https://jamisen-ma.github.io/jamisen-ma-personal-website/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Jamisen Ma – Software Engineer">
+    <meta name="twitter:description" content="Software engineer building AI agent systems and backend infrastructure.">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2318181b'/%3E%3Ctext x='32' y='43' font-family='Inter,Arial,sans-serif' font-size='28' font-weight='700' text-anchor='middle' fill='%23fafaf9'%3EJM%3C/text%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>document.documentElement.className = 'js';</script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jamisen Ma",
+        "jobTitle": "Software Engineer",
+        "url": "https://jamisen-ma.github.io/jamisen-ma-personal-website/",
+        "worksFor": { "@type": "Organization", "name": "Airtable" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Texas at Austin" },
+        "sameAs": [
+            "https://github.com/jamisen-ma",
+            "https://linkedin.com/in/jamisenma0215"
+        ]
+    }
+    </script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span>JM</span>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#experience" class="nav-link">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+    <a class="skip-link" href="#main">Skip to main content</a>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        Hi, I'm <span class="highlight">Jamisen Ma</span>
-                    </h1>
-                    <h2 class="hero-subtitle">
-                        I'm a <span id="typed-text"></span>
-                    </h2>
-                    <p class="hero-description">
-                        Software Engineer passionate about building scalable systems, 
-                        full-stack applications, and innovative solutions. Currently studying 
-                        Computer Science at UT Austin with experience at Confluent, Expedia, and Lockheed Martin.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View My Work</a>
-                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="profile-card">
-                        <div class="profile-avatar">
-                            <i class="fas fa-user-circle"></i>
-                        </div>
-                        <div class="profile-info">
-                            <h3>Jamisen Ma</h3>
-                            <p>Software Engineer</p>
-                            <div class="social-links">
-                                <a href="https://github.com/jamisen-ma" target="_blank"><i class="fab fa-github"></i></a>
-                                <a href="https://linkedin.com/in/jamisenma0215" target="_blank"><i class="fab fa-linkedin"></i></a>
-                                <a href="mailto:mjamisen02@gmail.com"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Icon sprite -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="sprite" aria-hidden="true" focusable="false">
+        <symbol id="icon-github" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </symbol>
+        <symbol id="icon-linkedin" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+        </symbol>
+        <symbol id="icon-mail" viewBox="0 0 24 24">
+            <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m22 7-10 6L2 7"/>
+            </g>
+        </symbol>
+        <symbol id="icon-external" viewBox="0 0 24 24">
+            <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 17 17 7"/>
+                <path d="M8 7h9v9"/>
+            </g>
+        </symbol>
+    </svg>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#top" class="site-name">Jamisen Ma</a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+                <span class="nav-toggle-bars" aria-hidden="true"></span>
+                <span class="visually-hidden">Menu</span>
+            </button>
+            <nav id="site-nav" class="site-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- Hero -->
+        <section id="top" class="hero">
+            <div class="container">
+                <p class="availability"><span class="availability-dot" aria-hidden="true"></span>Open to new software engineering roles</p>
+                <h1>Jamisen Ma</h1>
+                <p class="hero-role">Software Engineer</p>
+                <p class="hero-summary">
+                    I build AI agent systems and backend infrastructure. I'm currently at Airtable working on
+                    Omni's multi-agent system, and previously interned at Confluent, Expedia Group and
+                    Lockheed Martin. I graduated from UT Austin with a B.S. in Computer Science in 2026.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="mailto:jamisen.ma@gmail.com">Email me</a>
+                    <ul class="icon-links">
+                        <li>
+                            <a href="https://github.com/jamisen-ma" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                                <svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/in/jamisenma0215" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                                <svg class="icon" aria-hidden="true"><use href="#icon-linkedin"/></svg>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I'm a Computer Science student at the University of Texas at Austin with a passion for 
-                        building robust, scalable software systems. My experience spans across multiple domains 
-                        including distributed systems, cloud infrastructure, and full-stack development.
-                    </p>
-                    <p>
-                        I've had the privilege of working at industry-leading companies like Confluent, where I 
-                        designed and implemented a full-featured Lineage API Service, and Expedia Group, where I 
-                        modernized authentication systems. My technical expertise includes Java, Go, Python, 
-                        React, and cloud platforms like AWS and GCP.
-                    </p>
-                    <div class="education-card">
-                        <h3>Education</h3>
-                        <div class="education-item">
-                            <h4>University of Texas at Austin</h4>
-                            <p>Bachelor of Science in Computer Science</p>
-                            <p>GPA: 3.7 | Expected Graduation: May 2026</p>
+        <!-- Experience -->
+        <section id="experience" aria-labelledby="experience-heading">
+            <div class="container">
+                <h2 id="experience-heading" class="section-heading">Experience</h2>
+
+                <article class="entry">
+                    <header class="entry-header">
+                        <div>
+                            <h3>Software Engineer</h3>
+                            <p class="entry-org">Airtable <span class="entry-location">· San Francisco, CA</span></p>
                         </div>
-                    </div>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-card">
-                        <div class="stat-number">3</div>
-                        <div class="stat-label">Internships</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">10+</div>
-                        <div class="stat-label">Projects</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">15+</div>
-                        <div class="stat-label">Technologies</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                        <p class="entry-dates">August 2026 – Present</p>
+                    </header>
+                    <ul class="entry-points">
+                        <li>Enabled users to create and modify Airtable workflows from natural-language requests by building a TypeScript and Node.js multi-agent system for Omni that orchestrates calls across 20+ tools for tables and automations.</li>
+                        <li>Improved retrieval accuracy by 25% on internal evaluation sets by developing a Python RAG pipeline over 100K+ Airtable records and document chunks with embeddings, hybrid search, reranking and retrieval evaluations.</li>
+                        <li>Shipped customer-facing AI workflows to production, owning end-to-end delivery across system design, backend implementation, testing, deployment, observability and rollout in live Airtable environments.</li>
+                    </ul>
+                    <ul class="tags" aria-label="Technologies">
+                        <li>TypeScript</li>
+                        <li>Node.js</li>
+                        <li>Python</li>
+                        <li>Multi-agent systems</li>
+                        <li>RAG</li>
+                    </ul>
+                </article>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-header">
+                <article class="entry">
+                    <header class="entry-header">
+                        <div>
                             <h3>Software Engineering Intern</h3>
-                            <span class="company">Confluent</span>
-                            <span class="duration">May 2025 - August 2025</span>
+                            <p class="entry-org">Confluent <span class="entry-location">· Austin, TX</span></p>
                         </div>
-                        <ul class="timeline-description">
-                            <li>Designed and implemented a full-featured Java and Go Lineage API Service serving 200+ weekly API calls</li>
-                            <li>Created gRPC and HTTP endpoints achieving 500ms median latency for up to 10,000 events</li>
-                            <li>Containerized API Service with Docker and deployed to AWS EKS and GCP GKE with Terraform and Helm</li>
-                        </ul>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">Go</span>
-                            <span class="tech-tag">gRPC</span>
-                            <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">AWS</span>
-                            <span class="tech-tag">Terraform</span>
-                        </div>
-                    </div>
-                </div>
+                        <p class="entry-dates">May 2025 – August 2025</p>
+                    </header>
+                    <ul class="entry-points">
+                        <li>Designed and implemented a Java and Go lineage REST API service from scratch that now serves 200+ weekly API calls for lineage data and reduces manual lineage export effort by 80%.</li>
+                        <li>Created gRPC and HTTP endpoints for bulk lineage retrieval, achieving a median request latency of 500 ms for up to 10,000 events, accelerating downstream pipeline integration by 4x and scaling to 150+ Kafka clusters.</li>
+                        <li>Developed Python integration and end-to-end testing for Amazon S3, Databricks, Kafka Connect and Marquez services deployed in Docker containers orchestrated with Kubernetes, validating full data ingestion across the pipeline and improving reliability.</li>
+                    </ul>
+                    <ul class="tags" aria-label="Technologies">
+                        <li>Java</li>
+                        <li>Go</li>
+                        <li>gRPC</li>
+                        <li>Python</li>
+                        <li>Kafka</li>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                    </ul>
+                </article>
 
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-header">
+                <article class="entry">
+                    <header class="entry-header">
+                        <div>
                             <h3>Software Development Intern</h3>
-                            <span class="company">Expedia Group</span>
-                            <span class="duration">May 2024 - July 2024</span>
+                            <p class="entry-org">Expedia Group <span class="entry-location">· Austin, TX</span></p>
                         </div>
-                        <ul class="timeline-description">
-                            <li>Modernized authentication feature using Java with 5 REST API endpoints for OIDC flow</li>
-                            <li>Developed AWS SES system in Kotlin to handle 1200+ API client credentials</li>
-                            <li>Utilized AuroraDB, Redis, and Kafka improving credential operations by 8%</li>
-                        </ul>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">Kotlin</span>
-                            <span class="tech-tag">AWS SES</span>
-                            <span class="tech-tag">Redis</span>
-                            <span class="tech-tag">Kafka</span>
-                        </div>
-                    </div>
-                </div>
+                        <p class="entry-dates">May 2024 – July 2024</p>
+                    </header>
+                    <ul class="entry-points">
+                        <li>Built 5 secure REST API endpoints in Java implementing authorization-code exchange, JWT validation and OIDC-based authentication, enabling SSO across Vrbo services.</li>
+                        <li>Created 90+ unit and integration tests (92% code coverage) integrated into Jenkins CI/CD pipelines running on Linux-based build and deployment environments.</li>
+                    </ul>
+                    <ul class="tags" aria-label="Technologies">
+                        <li>Java</li>
+                        <li>REST</li>
+                        <li>OIDC</li>
+                        <li>JWT</li>
+                        <li>Jenkins</li>
+                    </ul>
+                </article>
 
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-header">
+                <article class="entry">
+                    <header class="entry-header">
+                        <div>
                             <h3>Software Engineering Intern</h3>
-                            <span class="company">Lockheed Martin</span>
-                            <span class="duration">May 2023 - August 2023</span>
+                            <p class="entry-org">Lockheed Martin <span class="entry-location">· Palo Alto, CA</span></p>
                         </div>
-                        <ul class="timeline-description">
-                            <li>Improved Python and Flask desktop applications for data acquisition and analysis</li>
-                            <li>Integrated MySQL, MongoDB and NoSQL databases with solar research backend applications</li>
-                        </ul>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Flask</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">MongoDB</span>
-                        </div>
-                    </div>
-                </div>
+                        <p class="entry-dates">May 2023 – August 2023</p>
+                    </header>
+                    <ul class="entry-points">
+                        <li>Developed Python and Flask applications to streamline scientific data acquisition, analysis and visualization workflows.</li>
+                        <li>Integrated MySQL, MongoDB and other NoSQL databases with solar research backend applications.</li>
+                    </ul>
+                    <ul class="tags" aria-label="Technologies">
+                        <li>Python</li>
+                        <li>Flask</li>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </article>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Platform for Live Sports Scores</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/jamisen-ma/RealtimeHighlights" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <p>End-to-end event pipeline for live sports data with real-time metrics and React-based visualizations.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">MySQL</span>
-                        <span class="tech-tag">Docker</span>
-                        <span class="tech-tag">Kubernetes</span>
-                    </div>
-                </div>
+        <!-- Projects -->
+        <section id="projects" aria-labelledby="projects-heading">
+            <div class="container">
+                <h2 id="projects-heading" class="section-heading">Projects</h2>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Agentic Claude AI Agent</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/jamisen-ma/BigPlays" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <p>Autonomous agent using Claude API and LangChain to identify viral sports moments and create highlight reels.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Claude API</span>
-                        <span class="tech-tag">LangChain</span>
-                        <span class="tech-tag">Docker</span>
-                    </div>
-                </div>
+                <article class="entry">
+                    <header class="entry-header">
+                        <h3>
+                            <a class="entry-link" href="https://github.com/jamisen-ma/BigPlays" target="_blank" rel="noopener noreferrer">
+                                AI Agent for Identifying Viral Sports Plays
+                                <svg class="icon icon-inline" aria-hidden="true"><use href="#icon-external"/></svg>
+                            </a>
+                        </h3>
+                    </header>
+                    <ul class="entry-points">
+                        <li>Built an LLM-powered AI agent in Python using the Claude API and LangChain to monitor live sports data and trigger FFmpeg workflows that automatically clip and assemble highlight reels for key NBA and NFL game moments.</li>
+                        <li>Built a RAG pipeline with LlamaIndex to index historical play-by-play data and commentary, storing embeddings in Pinecone and streaming live game events via Kafka for real-time semantic retrieval during LLM decision-making.</li>
+                        <li>Used LLM-powered reasoning to identify viral-worthy plays from live commentary and social media signals, with clips automatically tagged and stored in Amazon S3 for downstream content systems.</li>
+                    </ul>
+                    <ul class="tags" aria-label="Technologies">
+                        <li>Python</li>
+                        <li>React</li>
+                        <li>Mastra</li>
+                        <li>Claude API</li>
+                        <li>LangChain</li>
+                        <li>Docker</li>
+                    </ul>
+                </article>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Task Management System</h3>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <p>Rust REST API with Redis caching and PHP Laravel application with JWT authentication.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Rust</span>
-                        <span class="tech-tag">PHP</span>
-                        <span class="tech-tag">Redis</span>
-                        <span class="tech-tag">Laravel</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Positive EV Arbitrage Bot</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/jamisen-ma/PositiveEV-Arbitrage-Bot" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <p>Sports betting bot identifying positive EV and arbitrage opportunities from 20+ sportsbooks.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">C++</span>
-                        <span class="tech-tag">Flask</span>
-                        <span class="tech-tag">Pandas</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>PintOS Operating System</h3>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <p>Educational operating system implementing multithreading, synchronization, and task scheduling.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">C/C++</span>
-                        <span class="tech-tag">Linux</span>
-                        <span class="tech-tag">Git</span>
-                        <span class="tech-tag">GDB</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>SunPy Open Source Contributor</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/jamisen-ma/Display-for-Solar-Flare" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <p>Identified and fixed over 20 bugs in the SunPy visualization package for solar physics research.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Pandas</span>
-                        <span class="tech-tag">SciPy</span>
-                        <span class="tech-tag">Matplotlib</span>
-                    </div>
-                </div>
+                <article class="entry">
+                    <header class="entry-header">
+                        <h3>
+                            <a class="entry-link" href="https://github.com/jamisen-ma/PositiveEV-Arbitrage-Bot" target="_blank" rel="noopener noreferrer">
+                                Positive EV and Arbitrage Bot
+                                <svg class="icon icon-inline" aria-hidden="true"><use href="#icon-external"/></svg>
+                            </a>
+                        </h3>
+                    </header>
+                    <ul class="entry-points">
+                        <li>Developed a sports betting bot in C++ and Python that identifies positive EV and arbitrage opportunities from 20+ sportsbooks every 5 seconds to automate bets.</li>
+                        <li>Implemented parallel processing with a multiprocessing pool for data analysis and applied concurrent programming to optimize API calls, resulting in a 215% increase in speed for both the bot and API service.</li>
+                    </ul>
+                    <ul class="tags" aria-label="Technologies">
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>Flask</li>
+                        <li>Pandas</li>
+                    </ul>
+                </article>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">C/C++</span>
-                        <span class="skill-tag">Rust</span>
-                        <span class="skill-tag">Go</span>
-                        <span class="skill-tag">PHP</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">Kotlin</span>
-                        <span class="skill-tag">SQL</span>
+        <!-- Skills -->
+        <section id="skills" aria-labelledby="skills-heading">
+            <div class="container">
+                <h2 id="skills-heading" class="section-heading">Skills</h2>
+                <dl class="skills">
+                    <div class="skills-row">
+                        <dt>Languages</dt>
+                        <dd>Java, Go, JavaScript, Python, TypeScript, Ruby, Scala, C++, SQL</dd>
                     </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Frameworks & Libraries</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Spring Boot</span>
-                        <span class="skill-tag">Redux</span>
-                        <span class="skill-tag">TensorFlow</span>
-                        <span class="skill-tag">PyTorch</span>
-                        <span class="skill-tag">Flask</span>
-                        <span class="skill-tag">Django</span>
-                        <span class="skill-tag">Angular</span>
-                        <span class="skill-tag">Bootstrap</span>
+                    <div class="skills-row">
+                        <dt>Frameworks &amp; Libraries</dt>
+                        <dd>React, Node.js, FastAPI, PyTorch, TensorFlow, Hugging Face, LangChain, LlamaIndex</dd>
                     </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Databases & Platforms</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">Spark</span>
-                        <span class="skill-tag">Cassandra</span>
-                        <span class="skill-tag">Snowflake</span>
-                        <span class="skill-tag">Redis</span>
-                        <span class="skill-tag">Azure</span>
-                        <span class="skill-tag">Kafka</span>
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Git</span>
+                    <div class="skills-row">
+                        <dt>Databases, Platforms &amp; Tools</dt>
+                        <dd>PostgreSQL, MySQL, Redis, Pinecone, AWS, Docker, Kubernetes, Kafka, Git, CI/CD, Linux</dd>
                     </div>
-                </div>
+                </dl>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Connect</h3>
-                    <p>I'm always interested in new opportunities and collaborations. Feel free to reach out!</p>
-                    <div class="contact-items">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:mjamisen02@gmail.com">mjamisen02@gmail.com</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:+18327811053">+1 (832) 781-1053</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-linkedin"></i>
-                            <a href="https://linkedin.com/in/jamisenma0215" target="_blank">linkedin.com/in/jamisenma0215</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-github"></i>
-                            <a href="https://github.com/jamisen-ma" target="_blank">github.com/jamisen-ma</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- Education & Awards -->
+        <section id="education" aria-labelledby="education-heading">
+            <div class="container">
+                <h2 id="education-heading" class="section-heading">Education &amp; Awards</h2>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2024 Jamisen Ma. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#experience">Experience</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                </div>
+                <article class="entry">
+                    <header class="entry-header">
+                        <div>
+                            <h3>University of Texas at Austin</h3>
+                            <p class="entry-org">B.S. in Computer Science <span class="entry-location">· GPA 3.7</span></p>
+                        </div>
+                        <p class="entry-dates">May 2026</p>
+                    </header>
+                    <dl class="details">
+                        <div>
+                            <dt>Coursework</dt>
+                            <dd>Software Design, Machine Learning, Distributed Systems, Operating Systems, Computer Architecture, Data Management, Modern Web Applications, Data Structures, Algorithms, Game Theory, Linear Algebra</dd>
+                        </div>
+                        <div>
+                            <dt>Activities</dt>
+                            <dd>UT Competitive Programming, TX Convergent, Texas Epic</dd>
+                        </div>
+                    </dl>
+                </article>
+
+                <article class="entry">
+                    <header class="entry-header">
+                        <div>
+                            <h3>USA Computing Olympiad</h3>
+                            <p class="entry-org">Gold Division</p>
+                        </div>
+                        <p class="entry-dates">April 2020</p>
+                    </header>
+                </article>
             </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading" class="section-heading">Contact</h2>
+                <p class="contact-lead">
+                    I'm open to new software engineering roles. Email is the fastest way to reach me.
+                </p>
+                <ul class="contact-list">
+                    <li>
+                        <svg class="icon" aria-hidden="true"><use href="#icon-mail"/></svg>
+                        <a href="mailto:jamisen.ma@gmail.com">jamisen.ma@gmail.com</a>
+                    </li>
+                    <li>
+                        <svg class="icon" aria-hidden="true"><use href="#icon-linkedin"/></svg>
+                        <a href="https://linkedin.com/in/jamisenma0215" target="_blank" rel="noopener noreferrer">linkedin.com/in/jamisenma0215</a>
+                    </li>
+                    <li>
+                        <svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg>
+                        <a href="https://github.com/jamisen-ma" target="_blank" rel="noopener noreferrer">github.com/jamisen-ma</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="year">2026</span> Jamisen Ma</p>
+            <ul class="footer-links">
+                <li><a href="mailto:jamisen.ma@gmail.com">Email</a></li>
+                <li><a href="https://linkedin.com/in/jamisenma0215" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://github.com/jamisen-ma" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            </ul>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
-</html> 
+</html>
