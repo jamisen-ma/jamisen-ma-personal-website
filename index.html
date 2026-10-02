@@ -1,39 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jamisen Ma – Software Engineer</title>
-    <meta name="description" content="Jamisen Ma is a software engineer building AI agent systems and backend infrastructure. Currently at Airtable; previously Confluent, Expedia Group and Lockheed Martin.">
+    <title>Jamisen Ma – Software Engineering Intern at Airtable</title>
+    <meta name="description" content="Jamisen Ma builds AI agent systems and backend infrastructure. Software engineering intern at Airtable; previously Confluent, Expedia Group and Lockheed Martin.">
     <meta name="author" content="Jamisen Ma">
-    <meta name="theme-color" content="#fafaf9">
+    <meta name="theme-color" content="#09090b">
     <link rel="canonical" href="https://jamisen-ma.github.io/jamisen-ma-personal-website/">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Jamisen Ma – Software Engineer">
-    <meta property="og:description" content="Software engineer building AI agent systems and backend infrastructure. Currently at Airtable; previously Confluent, Expedia Group and Lockheed Martin.">
+    <meta property="og:title" content="Jamisen Ma – Software Engineering Intern at Airtable">
+    <meta property="og:description" content="Building AI agent systems and backend infrastructure. Software engineering intern at Airtable; previously Confluent, Expedia Group and Lockheed Martin.">
     <meta property="og:url" content="https://jamisen-ma.github.io/jamisen-ma-personal-website/">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Jamisen Ma – Software Engineer">
-    <meta name="twitter:description" content="Software engineer building AI agent systems and backend infrastructure.">
+    <meta name="twitter:title" content="Jamisen Ma – Software Engineering Intern at Airtable">
+    <meta name="twitter:description" content="Building AI agent systems and backend infrastructure. Software engineering intern at Airtable.">
 
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2318181b'/%3E%3Ctext x='32' y='43' font-family='Inter,Arial,sans-serif' font-size='28' font-weight='700' text-anchor='middle' fill='%23fafaf9'%3EJM%3C/text%3E%3C/svg%3E">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%238b5cf6'/%3E%3Cstop offset='1' stop-color='%2306b6d4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='26' font-weight='700' text-anchor='middle' fill='white'%3EJM%3C/text%3E%3C/svg%3E">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
-    <script>document.documentElement.className = 'js';</script>
+    <script>
+        document.documentElement.classList.add('js');
+        try {
+            var savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'light' || savedTheme === 'dark') {
+                document.documentElement.setAttribute('data-theme', savedTheme);
+            }
+        } catch (e) {}
+    </script>
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Jamisen Ma",
-        "jobTitle": "Software Engineer",
+        "jobTitle": "Software Engineering Intern",
         "url": "https://jamisen-ma.github.io/jamisen-ma-personal-website/",
         "worksFor": { "@type": "Organization", "name": "Airtable" },
-        "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Texas at Austin" },
         "sameAs": [
             "https://github.com/jamisen-ma",
             "https://linkedin.com/in/jamisenma0215"
@@ -47,7 +54,7 @@
     <!-- Icon sprite -->
     <svg xmlns="http://www.w3.org/2000/svg" class="sprite" aria-hidden="true" focusable="false">
         <symbol id="icon-github" viewBox="0 0 24 24">
-            <path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+            <path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.220 0 4.61-2.805 5.625-5.475 5.920.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
         </symbol>
         <symbol id="icon-linkedin" viewBox="0 0 24 24">
             <path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
@@ -58,47 +65,98 @@
                 <path d="m22 7-10 6L2 7"/>
             </g>
         </symbol>
-        <symbol id="icon-external" viewBox="0 0 24 24">
+        <symbol id="icon-arrow" viewBox="0 0 24 24">
             <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M7 17 17 7"/>
-                <path d="M8 7h9v9"/>
+                <path d="M5 12h14"/>
+                <path d="m13 6 6 6-6 6"/>
+            </g>
+        </symbol>
+        <symbol id="icon-play" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M8 5.14v13.72a1 1 0 0 0 1.52.85l11.03-6.86a1 1 0 0 0 0-1.7L9.52 4.29A1 1 0 0 0 8 5.14z"/>
+        </symbol>
+        <symbol id="icon-code" viewBox="0 0 24 24">
+            <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m16 18 6-6-6-6"/>
+                <path d="m8 6-6 6 6 6"/>
+            </g>
+        </symbol>
+        <symbol id="icon-sun" viewBox="0 0 24 24">
+            <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4"/>
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+            </g>
+        </symbol>
+        <symbol id="icon-moon" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/>
+        </symbol>
+        <symbol id="icon-copy" viewBox="0 0 24 24">
+            <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2"/>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+            </g>
+        </symbol>
+        <symbol id="icon-trophy" viewBox="0 0 24 24">
+            <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/>
+                <path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/>
             </g>
         </symbol>
     </svg>
 
     <header class="site-header">
         <div class="container header-inner">
-            <a href="#top" class="site-name">Jamisen Ma</a>
-            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-                <span class="nav-toggle-bars" aria-hidden="true"></span>
-                <span class="visually-hidden">Menu</span>
-            </button>
+            <a href="#top" class="brand" aria-label="Jamisen Ma, back to top">
+                <span class="brand-mark" aria-hidden="true">JM</span>
+                <span class="brand-name">Jamisen Ma</span>
+            </a>
             <nav id="site-nav" class="site-nav" aria-label="Primary">
                 <ul>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#education">Education</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <div class="header-actions">
+                <button class="theme-toggle" type="button" aria-label="Switch to light theme">
+                    <svg class="icon icon-sun" aria-hidden="true"><use href="#icon-sun"/></svg>
+                    <svg class="icon icon-moon" aria-hidden="true"><use href="#icon-moon"/></svg>
+                </button>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+                    <span class="nav-toggle-bars" aria-hidden="true"></span>
+                    <span class="visually-hidden">Menu</span>
+                </button>
+            </div>
         </div>
     </header>
 
     <main id="main">
         <!-- Hero -->
         <section id="top" class="hero">
-            <div class="container">
-                <p class="availability"><span class="availability-dot" aria-hidden="true"></span>Open to new software engineering roles</p>
-                <h1>Jamisen Ma</h1>
-                <p class="hero-role">Software Engineer</p>
+            <div class="hero-bg" aria-hidden="true">
+                <div class="hero-grid"></div>
+                <div class="hero-glow hero-glow-1"></div>
+                <div class="hero-glow hero-glow-2"></div>
+            </div>
+            <div class="container hero-inner">
+                <p class="availability"><span class="pulse-dot" aria-hidden="true"></span>Open to new software engineering roles</p>
+                <h1 class="hero-title">
+                    <span class="hero-name">Jamisen Ma</span>
+                    <span class="hero-tagline">I build <span class="gradient-text">AI agents</span> and the backend systems they run on.</span>
+                </h1>
                 <p class="hero-summary">
-                    I build AI agent systems and backend infrastructure. I'm currently at Airtable working on
-                    Omni's multi-agent system, and previously interned at Confluent, Expedia Group and
-                    Lockheed Martin. I graduated from UT Austin with a B.S. in Computer Science in 2026.
+                    Software engineering intern at <strong>Airtable</strong>, working on Omni's multi-agent system.
+                    Previously at <strong>Confluent</strong>, <strong>Expedia Group</strong> and <strong>Lockheed Martin</strong>.
                 </p>
                 <div class="hero-actions">
-                    <a class="btn btn-primary" href="mailto:jamisen.ma@gmail.com">Email me</a>
+                    <a class="btn btn-primary" href="#projects">
+                        View my work
+                        <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg>
+                    </a>
+                    <a class="btn btn-secondary" href="mailto:jamisen.ma@gmail.com">
+                        <svg class="icon" aria-hidden="true"><use href="#icon-mail"/></svg>
+                        Get in touch
+                    </a>
                     <ul class="icon-links">
                         <li>
                             <a href="https://github.com/jamisen-ma" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
@@ -112,234 +170,383 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-        </section>
 
-        <!-- Experience -->
-        <section id="experience" aria-labelledby="experience-heading">
-            <div class="container">
-                <h2 id="experience-heading" class="section-heading">Experience</h2>
-
-                <article class="entry">
-                    <header class="entry-header">
-                        <div>
-                            <h3>Software Engineer</h3>
-                            <p class="entry-org">Airtable <span class="entry-location">· San Francisco, CA</span></p>
-                        </div>
-                        <p class="entry-dates">August 2026 – Present</p>
-                    </header>
-                    <ul class="entry-points">
-                        <li>Enabled users to create and modify Airtable workflows from natural-language requests by building a TypeScript and Node.js multi-agent system for Omni that orchestrates calls across 20+ tools for tables and automations.</li>
-                        <li>Improved retrieval accuracy by 25% on internal evaluation sets by developing a Python RAG pipeline over 100K+ Airtable records and document chunks with embeddings, hybrid search, reranking and retrieval evaluations.</li>
-                        <li>Shipped customer-facing AI workflows to production, owning end-to-end delivery across system design, backend implementation, testing, deployment, observability and rollout in live Airtable environments.</li>
-                    </ul>
-                    <ul class="tags" aria-label="Technologies">
-                        <li>TypeScript</li>
-                        <li>Node.js</li>
-                        <li>Python</li>
-                        <li>Multi-agent systems</li>
-                        <li>RAG</li>
-                    </ul>
-                </article>
-
-                <article class="entry">
-                    <header class="entry-header">
-                        <div>
-                            <h3>Software Engineering Intern</h3>
-                            <p class="entry-org">Confluent <span class="entry-location">· Austin, TX</span></p>
-                        </div>
-                        <p class="entry-dates">May 2025 – August 2025</p>
-                    </header>
-                    <ul class="entry-points">
-                        <li>Designed and implemented a Java and Go lineage REST API service from scratch that now serves 200+ weekly API calls for lineage data and reduces manual lineage export effort by 80%.</li>
-                        <li>Created gRPC and HTTP endpoints for bulk lineage retrieval, achieving a median request latency of 500 ms for up to 10,000 events, accelerating downstream pipeline integration by 4x and scaling to 150+ Kafka clusters.</li>
-                        <li>Developed Python integration and end-to-end testing for Amazon S3, Databricks, Kafka Connect and Marquez services deployed in Docker containers orchestrated with Kubernetes, validating full data ingestion across the pipeline and improving reliability.</li>
-                    </ul>
-                    <ul class="tags" aria-label="Technologies">
-                        <li>Java</li>
-                        <li>Go</li>
-                        <li>gRPC</li>
-                        <li>Python</li>
-                        <li>Kafka</li>
-                        <li>Docker</li>
-                        <li>Kubernetes</li>
-                    </ul>
-                </article>
-
-                <article class="entry">
-                    <header class="entry-header">
-                        <div>
-                            <h3>Software Development Intern</h3>
-                            <p class="entry-org">Expedia Group <span class="entry-location">· Austin, TX</span></p>
-                        </div>
-                        <p class="entry-dates">May 2024 – July 2024</p>
-                    </header>
-                    <ul class="entry-points">
-                        <li>Built 5 secure REST API endpoints in Java implementing authorization-code exchange, JWT validation and OIDC-based authentication, enabling SSO across Vrbo services.</li>
-                        <li>Created 90+ unit and integration tests (92% code coverage) integrated into Jenkins CI/CD pipelines running on Linux-based build and deployment environments.</li>
-                    </ul>
-                    <ul class="tags" aria-label="Technologies">
-                        <li>Java</li>
-                        <li>REST</li>
-                        <li>OIDC</li>
-                        <li>JWT</li>
-                        <li>Jenkins</li>
-                    </ul>
-                </article>
-
-                <article class="entry">
-                    <header class="entry-header">
-                        <div>
-                            <h3>Software Engineering Intern</h3>
-                            <p class="entry-org">Lockheed Martin <span class="entry-location">· Palo Alto, CA</span></p>
-                        </div>
-                        <p class="entry-dates">May 2023 – August 2023</p>
-                    </header>
-                    <ul class="entry-points">
-                        <li>Developed Python and Flask applications to streamline scientific data acquisition, analysis and visualization workflows.</li>
-                        <li>Integrated MySQL, MongoDB and other NoSQL databases with solar research backend applications.</li>
-                    </ul>
-                    <ul class="tags" aria-label="Technologies">
-                        <li>Python</li>
-                        <li>Flask</li>
-                        <li>MySQL</li>
-                        <li>MongoDB</li>
-                    </ul>
-                </article>
-            </div>
-        </section>
-
-        <!-- Projects -->
-        <section id="projects" aria-labelledby="projects-heading">
-            <div class="container">
-                <h2 id="projects-heading" class="section-heading">Projects</h2>
-
-                <article class="entry">
-                    <header class="entry-header">
-                        <h3>
-                            <a class="entry-link" href="https://github.com/jamisen-ma/BigPlays" target="_blank" rel="noopener noreferrer">
-                                AI Agent for Identifying Viral Sports Plays
-                                <svg class="icon icon-inline" aria-hidden="true"><use href="#icon-external"/></svg>
-                            </a>
-                        </h3>
-                    </header>
-                    <ul class="entry-points">
-                        <li>Built an LLM-powered AI agent in Python using the Claude API and LangChain to monitor live sports data and trigger FFmpeg workflows that automatically clip and assemble highlight reels for key NBA and NFL game moments.</li>
-                        <li>Built a RAG pipeline with LlamaIndex to index historical play-by-play data and commentary, storing embeddings in Pinecone and streaming live game events via Kafka for real-time semantic retrieval during LLM decision-making.</li>
-                        <li>Used LLM-powered reasoning to identify viral-worthy plays from live commentary and social media signals, with clips automatically tagged and stored in Amazon S3 for downstream content systems.</li>
-                    </ul>
-                    <ul class="tags" aria-label="Technologies">
-                        <li>Python</li>
-                        <li>React</li>
-                        <li>Mastra</li>
-                        <li>Claude API</li>
-                        <li>LangChain</li>
-                        <li>Docker</li>
-                    </ul>
-                </article>
-
-                <article class="entry">
-                    <header class="entry-header">
-                        <h3>
-                            <a class="entry-link" href="https://github.com/jamisen-ma/PositiveEV-Arbitrage-Bot" target="_blank" rel="noopener noreferrer">
-                                Positive EV and Arbitrage Bot
-                                <svg class="icon icon-inline" aria-hidden="true"><use href="#icon-external"/></svg>
-                            </a>
-                        </h3>
-                    </header>
-                    <ul class="entry-points">
-                        <li>Developed a sports betting bot in C++ and Python that identifies positive EV and arbitrage opportunities from 20+ sportsbooks every 5 seconds to automate bets.</li>
-                        <li>Implemented parallel processing with a multiprocessing pool for data analysis and applied concurrent programming to optimize API calls, resulting in a 215% increase in speed for both the bot and API service.</li>
-                    </ul>
-                    <ul class="tags" aria-label="Technologies">
-                        <li>C++</li>
-                        <li>Python</li>
-                        <li>Flask</li>
-                        <li>Pandas</li>
-                    </ul>
-                </article>
-            </div>
-        </section>
-
-        <!-- Skills -->
-        <section id="skills" aria-labelledby="skills-heading">
-            <div class="container">
-                <h2 id="skills-heading" class="section-heading">Skills</h2>
-                <dl class="skills">
-                    <div class="skills-row">
-                        <dt>Languages</dt>
-                        <dd>Java, Go, JavaScript, Python, TypeScript, Ruby, Scala, C++, SQL</dd>
+                <dl class="stats">
+                    <div class="stat">
+                        <dt>Engineering internships</dt>
+                        <dd>4</dd>
                     </div>
-                    <div class="skills-row">
-                        <dt>Frameworks &amp; Libraries</dt>
-                        <dd>React, Node.js, FastAPI, PyTorch, TensorFlow, Hugging Face, LangChain, LlamaIndex</dd>
+                    <div class="stat">
+                        <dt>Live AI products</dt>
+                        <dd>2</dd>
                     </div>
-                    <div class="skills-row">
-                        <dt>Databases, Platforms &amp; Tools</dt>
-                        <dd>PostgreSQL, MySQL, Redis, Pinecone, AWS, Docker, Kubernetes, Kafka, Git, CI/CD, Linux</dd>
+                    <div class="stat">
+                        <dt>Retrieval accuracy gain</dt>
+                        <dd>+25%</dd>
+                    </div>
+                    <div class="stat">
+                        <dt>USA Computing Olympiad</dt>
+                        <dd>Gold</dd>
                     </div>
                 </dl>
             </div>
         </section>
 
-        <!-- Education & Awards -->
-        <section id="education" aria-labelledby="education-heading">
+        <!-- Experience -->
+        <section id="experience" class="section" aria-labelledby="experience-heading">
             <div class="container">
-                <h2 id="education-heading" class="section-heading">Education &amp; Awards</h2>
+                <header class="section-header">
+                    <p class="section-eyebrow">01 · Experience</p>
+                    <h2 id="experience-heading">Where I've worked</h2>
+                </header>
 
-                <article class="entry">
-                    <header class="entry-header">
-                        <div>
-                            <h3>University of Texas at Austin</h3>
-                            <p class="entry-org">B.S. in Computer Science <span class="entry-location">· GPA 3.7</span></p>
+                <ol class="timeline">
+                    <li class="job reveal is-current">
+                        <div class="job-logo" aria-hidden="true">A</div>
+                        <div class="job-body">
+                            <header class="job-header">
+                                <div>
+                                    <h3>Software Engineering Intern</h3>
+                                    <p class="job-org">Airtable <span>San Francisco, CA</span></p>
+                                </div>
+                                <p class="job-dates"><span class="pulse-dot" aria-hidden="true"></span>Aug 2026 – Present</p>
+                            </header>
+                            <ul class="points">
+                                <li>Enabled users to create and modify Airtable workflows from natural-language requests by building a TypeScript and Node.js multi-agent system for Omni that orchestrates calls across <strong>20+ tools</strong> for tables and automations.</li>
+                                <li>Improved retrieval accuracy by <strong>25%</strong> on internal evaluation sets by developing a Python RAG pipeline over <strong>100K+</strong> Airtable records and document chunks with embeddings, hybrid search, reranking and retrieval evaluations.</li>
+                                <li>Shipped customer-facing AI workflows to production, owning end-to-end delivery across system design, backend implementation, testing, deployment, observability and rollout in live Airtable environments.</li>
+                            </ul>
+                            <ul class="tags" aria-label="Technologies">
+                                <li>TypeScript</li>
+                                <li>Node.js</li>
+                                <li>Python</li>
+                                <li>Multi-agent systems</li>
+                                <li>RAG</li>
+                            </ul>
                         </div>
-                        <p class="entry-dates">May 2026</p>
-                    </header>
-                    <dl class="details">
-                        <div>
-                            <dt>Coursework</dt>
-                            <dd>Software Design, Machine Learning, Distributed Systems, Operating Systems, Computer Architecture, Data Management, Modern Web Applications, Data Structures, Algorithms, Game Theory, Linear Algebra</dd>
-                        </div>
-                        <div>
-                            <dt>Activities</dt>
-                            <dd>UT Competitive Programming, TX Convergent, Texas Epic</dd>
-                        </div>
-                    </dl>
-                </article>
+                    </li>
 
-                <article class="entry">
-                    <header class="entry-header">
+                    <li class="job reveal">
+                        <div class="job-logo" aria-hidden="true">C</div>
+                        <div class="job-body">
+                            <header class="job-header">
+                                <div>
+                                    <h3>Software Engineering Intern</h3>
+                                    <p class="job-org">Confluent <span>Austin, TX</span></p>
+                                </div>
+                                <p class="job-dates">May – Aug 2025</p>
+                            </header>
+                            <ul class="points">
+                                <li>Designed and implemented a Java and Go lineage REST API service from scratch that now serves <strong>200+ weekly API calls</strong> for lineage data and reduces manual lineage export effort by <strong>80%</strong>.</li>
+                                <li>Created gRPC and HTTP endpoints for bulk lineage retrieval, achieving a median request latency of <strong>500 ms</strong> for up to 10,000 events, accelerating downstream pipeline integration by <strong>4x</strong> and scaling to 150+ Kafka clusters.</li>
+                                <li>Developed Python integration and end-to-end testing for Amazon S3, Databricks, Kafka Connect and Marquez services deployed in Docker containers orchestrated with Kubernetes, validating full data ingestion across the pipeline and improving reliability.</li>
+                            </ul>
+                            <ul class="tags" aria-label="Technologies">
+                                <li>Java</li>
+                                <li>Go</li>
+                                <li>gRPC</li>
+                                <li>Python</li>
+                                <li>Kafka</li>
+                                <li>Docker</li>
+                                <li>Kubernetes</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="job reveal">
+                        <div class="job-logo" aria-hidden="true">E</div>
+                        <div class="job-body">
+                            <header class="job-header">
+                                <div>
+                                    <h3>Software Development Intern</h3>
+                                    <p class="job-org">Expedia Group <span>Austin, TX</span></p>
+                                </div>
+                                <p class="job-dates">May – Jul 2024</p>
+                            </header>
+                            <ul class="points">
+                                <li>Built <strong>5 secure REST API endpoints</strong> in Java implementing authorization-code exchange, JWT validation and OIDC-based authentication, enabling SSO across Vrbo services.</li>
+                                <li>Created <strong>90+ unit and integration tests</strong> (92% code coverage) integrated into Jenkins CI/CD pipelines running on Linux-based build and deployment environments.</li>
+                            </ul>
+                            <ul class="tags" aria-label="Technologies">
+                                <li>Java</li>
+                                <li>REST</li>
+                                <li>OIDC</li>
+                                <li>JWT</li>
+                                <li>Jenkins</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="job reveal">
+                        <div class="job-logo" aria-hidden="true">L</div>
+                        <div class="job-body">
+                            <header class="job-header">
+                                <div>
+                                    <h3>Software Engineering Intern</h3>
+                                    <p class="job-org">Lockheed Martin <span>Palo Alto, CA</span></p>
+                                </div>
+                                <p class="job-dates">May – Aug 2023</p>
+                            </header>
+                            <ul class="points">
+                                <li>Developed Python and Flask applications to streamline scientific data acquisition, analysis and visualization workflows.</li>
+                                <li>Integrated MySQL, MongoDB and other NoSQL databases with solar research backend applications.</li>
+                            </ul>
+                            <ul class="tags" aria-label="Technologies">
+                                <li>Python</li>
+                                <li>Flask</li>
+                                <li>MySQL</li>
+                                <li>MongoDB</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section" aria-labelledby="projects-heading">
+            <div class="container">
+                <header class="section-header">
+                    <p class="section-eyebrow">02 · Projects</p>
+                    <h2 id="projects-heading">Things I've built</h2>
+                    <p class="section-lead">Two of these are running right now. Click through and try them.</p>
+                </header>
+
+                <div class="projects">
+                    <article class="project reveal">
+                        <a class="project-preview preview-violet" href="https://ai-photoshop.ngrok.dev" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                            <div class="browser-bar">
+                                <span class="browser-dots"><i></i><i></i><i></i></span>
+                                <span class="browser-url">ai-photoshop.ngrok.dev</span>
+                            </div>
+                            <div class="preview-art">
+                                <div class="mock-editor">
+                                    <div class="mock-tools"><i></i><i></i><i></i><i></i><i></i></div>
+                                    <div class="mock-canvas"><div class="mock-sun"></div><div class="mock-hill"></div><div class="mock-select"></div></div>
+                                    <div class="mock-chat">
+                                        <p>“Warm up the sky and cut out the subject”</p>
+                                        <span></span><span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="project-body">
+                            <header class="project-header">
+                                <div>
+                                    <h3>AI Photoshop</h3>
+                                    <p class="project-kicker">Prism Studio · AI image editor</p>
+                                </div>
+                                <span class="live-badge"><span class="pulse-dot" aria-hidden="true"></span>Live</span>
+                            </header>
+                            <p class="project-summary">
+                                A standalone, browser-based image editor that an AI assistant drives through MCP. Describe an
+                                edit in plain language and the agent picks native edits, image generation, or both.
+                            </p>
+                            <ul class="points">
+                                <li>Built a native document engine in TypeScript and React with layers, groups, masks, 27 blend modes, editable adjustments and 32 non-destructive filters, covering a 71-tool Photoshop inventory.</li>
+                                <li>Exposed the editor as a Model Context Protocol server with atomic, undoable transactions so AI agents can inspect previews, apply edits and export results safely.</li>
+                                <li>Integrated AI image generation through a durable job queue with cancellation and retry, plus local BiRefNet subject extraction so photos never leave the machine.</li>
+                            </ul>
+                            <ul class="tags" aria-label="Technologies">
+                                <li>TypeScript</li>
+                                <li>React</li>
+                                <li>Node.js</li>
+                                <li>MCP</li>
+                                <li>Python</li>
+                                <li>Docker</li>
+                            </ul>
+                            <div class="project-links">
+                                <a class="btn btn-primary btn-sm" href="https://ai-photoshop.ngrok.dev" target="_blank" rel="noopener noreferrer">
+                                    <svg class="icon" aria-hidden="true"><use href="#icon-play"/></svg>
+                                    Live demo
+                                </a>
+                                <a class="btn btn-secondary btn-sm" href="https://github.com/jamisen-ma/prism-studio" target="_blank" rel="noopener noreferrer">
+                                    <svg class="icon" aria-hidden="true"><use href="#icon-code"/></svg>
+                                    Source
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <a class="project-preview preview-cyan" href="https://bigplays.ngrok.dev" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                            <div class="browser-bar">
+                                <span class="browser-dots"><i></i><i></i><i></i></span>
+                                <span class="browser-url">bigplays.ngrok.dev</span>
+                            </div>
+                            <div class="preview-art">
+                                <div class="mock-feed">
+                                    <div class="mock-clip"><b>Q4 0:12</b><span>Game-winning three</span><em>98</em></div>
+                                    <div class="mock-clip"><b>Q2 4:51</b><span>Poster dunk</span><em>91</em></div>
+                                    <div class="mock-clip"><b>Q3 8:03</b><span>One-handed catch</span><em>87</em></div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="project-body">
+                            <header class="project-header">
+                                <div>
+                                    <h3>BigPlays</h3>
+                                    <p class="project-kicker">AI agent for viral sports plays</p>
+                                </div>
+                                <span class="live-badge"><span class="pulse-dot" aria-hidden="true"></span>Live</span>
+                            </header>
+                            <p class="project-summary">
+                                An agent that watches live NBA and NFL games, spots the plays people will share, and clips them automatically.
+                            </p>
+                            <ul class="points">
+                                <li>Built an LLM-powered agent in Python using the Claude API and LangChain to monitor live sports data and trigger FFmpeg workflows that clip and assemble highlight reels.</li>
+                                <li>Built a RAG pipeline with LlamaIndex over historical play-by-play and commentary, with embeddings in Pinecone and live game events streamed via Kafka for real-time retrieval.</li>
+                                <li>Ranked viral-worthy plays from live commentary and social signals, with clips tagged and stored in Amazon S3 for downstream content systems.</li>
+                            </ul>
+                            <ul class="tags" aria-label="Technologies">
+                                <li>Python</li>
+                                <li>React</li>
+                                <li>Mastra</li>
+                                <li>Claude API</li>
+                                <li>LangChain</li>
+                                <li>Docker</li>
+                            </ul>
+                            <div class="project-links">
+                                <a class="btn btn-primary btn-sm" href="https://bigplays.ngrok.dev" target="_blank" rel="noopener noreferrer">
+                                    <svg class="icon" aria-hidden="true"><use href="#icon-play"/></svg>
+                                    Live demo
+                                </a>
+                                <a class="btn btn-secondary btn-sm" href="https://github.com/jamisen-ma/BigPlays" target="_blank" rel="noopener noreferrer">
+                                    <svg class="icon" aria-hidden="true"><use href="#icon-code"/></svg>
+                                    Source
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project project-wide reveal">
+                        <div class="project-body">
+                            <header class="project-header">
+                                <div>
+                                    <h3>Positive EV and Arbitrage Bot</h3>
+                                    <p class="project-kicker">Real-time sports betting engine</p>
+                                </div>
+                            </header>
+                            <ul class="points">
+                                <li>Developed a sports betting bot in C++ and Python that identifies positive EV and arbitrage opportunities from <strong>20+ sportsbooks every 5 seconds</strong> to automate bets.</li>
+                                <li>Implemented parallel processing with a multiprocessing pool and concurrent API calls, resulting in a <strong>215% increase in speed</strong> for both the bot and API service.</li>
+                            </ul>
+                            <ul class="tags" aria-label="Technologies">
+                                <li>C++</li>
+                                <li>Python</li>
+                                <li>Flask</li>
+                                <li>Pandas</li>
+                            </ul>
+                            <div class="project-links">
+                                <a class="btn btn-secondary btn-sm" href="https://github.com/jamisen-ma/PositiveEV-Arbitrage-Bot" target="_blank" rel="noopener noreferrer">
+                                    <svg class="icon" aria-hidden="true"><use href="#icon-code"/></svg>
+                                    Source
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section" aria-labelledby="skills-heading">
+            <div class="container">
+                <header class="section-header">
+                    <p class="section-eyebrow">03 · Skills</p>
+                    <h2 id="skills-heading">Tools of the trade</h2>
+                </header>
+
+                <div class="skills">
+                    <div class="skill-card reveal">
+                        <h3>Languages</h3>
+                        <ul class="tags">
+                            <li>Python</li>
+                            <li>TypeScript</li>
+                            <li>JavaScript</li>
+                            <li>Java</li>
+                            <li>Go</li>
+                            <li>C++</li>
+                            <li>Scala</li>
+                            <li>Ruby</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card reveal">
+                        <h3>AI &amp; Frameworks</h3>
+                        <ul class="tags">
+                            <li>LangChain</li>
+                            <li>LlamaIndex</li>
+                            <li>PyTorch</li>
+                            <li>TensorFlow</li>
+                            <li>Hugging Face</li>
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>FastAPI</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card reveal">
+                        <h3>Infrastructure &amp; Data</h3>
+                        <ul class="tags">
+                            <li>AWS</li>
+                            <li>Docker</li>
+                            <li>Kubernetes</li>
+                            <li>Kafka</li>
+                            <li>PostgreSQL</li>
+                            <li>MySQL</li>
+                            <li>Redis</li>
+                            <li>Pinecone</li>
+                            <li>CI/CD</li>
+                            <li>Linux</li>
+                            <li>Git</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card award-card reveal">
+                        <svg class="award-icon" aria-hidden="true"><use href="#icon-trophy"/></svg>
                         <div>
                             <h3>USA Computing Olympiad</h3>
-                            <p class="entry-org">Gold Division</p>
+                            <p>Gold Division</p>
                         </div>
-                        <p class="entry-dates">April 2020</p>
-                    </header>
-                </article>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Contact -->
-        <section id="contact" aria-labelledby="contact-heading">
+        <section id="contact" class="section" aria-labelledby="contact-heading">
             <div class="container">
-                <h2 id="contact-heading" class="section-heading">Contact</h2>
-                <p class="contact-lead">
-                    I'm open to new software engineering roles. Email is the fastest way to reach me.
-                </p>
-                <ul class="contact-list">
-                    <li>
-                        <svg class="icon" aria-hidden="true"><use href="#icon-mail"/></svg>
-                        <a href="mailto:jamisen.ma@gmail.com">jamisen.ma@gmail.com</a>
-                    </li>
-                    <li>
-                        <svg class="icon" aria-hidden="true"><use href="#icon-linkedin"/></svg>
-                        <a href="https://linkedin.com/in/jamisenma0215" target="_blank" rel="noopener noreferrer">linkedin.com/in/jamisenma0215</a>
-                    </li>
-                    <li>
-                        <svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg>
-                        <a href="https://github.com/jamisen-ma" target="_blank" rel="noopener noreferrer">github.com/jamisen-ma</a>
-                    </li>
-                </ul>
+                <div class="cta reveal">
+                    <p class="section-eyebrow">04 · Contact</p>
+                    <h2 id="contact-heading">Let's build something together.</h2>
+                    <p class="cta-lead">
+                        I'm open to new software engineering roles, especially in AI agents and backend infrastructure.
+                        Email is the fastest way to reach me.
+                    </p>
+                    <div class="cta-actions">
+                        <a class="btn btn-primary" href="mailto:jamisen.ma@gmail.com">
+                            <svg class="icon" aria-hidden="true"><use href="#icon-mail"/></svg>
+                            jamisen.ma@gmail.com
+                        </a>
+                        <button class="btn btn-secondary copy-email" type="button" data-email="jamisen.ma@gmail.com">
+                            <svg class="icon" aria-hidden="true"><use href="#icon-copy"/></svg>
+                            <span class="copy-label" aria-live="polite">Copy email</span>
+                        </button>
+                    </div>
+                    <ul class="cta-links">
+                        <li>
+                            <a href="https://linkedin.com/in/jamisenma0215" target="_blank" rel="noopener noreferrer">
+                                <svg class="icon" aria-hidden="true"><use href="#icon-linkedin"/></svg>
+                                LinkedIn
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/jamisen-ma" target="_blank" rel="noopener noreferrer">
+                                <svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg>
+                                GitHub
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
